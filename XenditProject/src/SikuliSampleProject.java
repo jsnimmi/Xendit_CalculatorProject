@@ -41,9 +41,9 @@ public class SikuliSampleProject {
 		//Pattern pattern=new Pattern("C:\\Users\\John\\eclipse-workspace\\XenditProject\\ImageLib\\GoogleSearch.PNG");
 		Pattern pattern = null;
 		pattern=new Pattern("D:\\Selenium\\CalcImage\\One.PNG");
-		//System.out.println("SikuliSampleProject completed-2)");
+		
 		screen.wait(pattern,2000);
-		//System.out.println("SikuliSampleProject completed-3)");
+		
 		screen.click(pattern);
 		
 		Pattern plus=new Pattern("D:\\Selenium\\CalcImage\\Plus.PNG");
@@ -54,16 +54,7 @@ public class SikuliSampleProject {
 		
 		Pattern equal=new Pattern("D:\\Selenium\\CalcImage\\Equal.PNG");
 		screen.click(equal);
-		
-		//Pattern answer=new Pattern("D:\\Selenium\\CalcImage\\Answer.PNG");
-		//screen.click(answer);
-		
-	//String text=screen.find("D:\\Selenium\\CalcImage\\Answer2.PNG").text();
-	
-		/*String foundText = screen.find("D:\\Selenium\\CalcImage\\Answer2.PNG").right(100).text();
-		String Finaltext = foundText.trim();
-		  System.out.println(Finaltext);*/
-		
+			
 		String textData=SikuliSampleProject.createImage("C:\\Users\\John\\eclipse-workspace\\XenditProject\\ImageLib\\CalcImage\\Answer2.PNG");
 		
 		System.out.println("Addition Result: 1 + 6 = " + textData);
